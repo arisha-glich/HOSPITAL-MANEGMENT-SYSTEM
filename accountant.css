@@ -1,0 +1,137 @@
+/* accountant.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #c1cdde;
+    font-size: 16px; /* Reduced font size */
+}
+
+.sidebar {
+    width: 250px;
+    background: #324e6b;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 18px; /* Adjusted font size */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex: 1;
+    font-size: 16px; /* Reduced font size */
+}
+
+.main-content h2 {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background: #575d63;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px; /* Adjusted font size */
+}
+
+.profile-count-btn {
+    background-color: #3498db;
+    margin: 10px;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-count-btn:hover {
+    background-color: #2980b9;
+}
+
+.accountant-profile {
+    background: #b0c2dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-info {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.metrics {
+    display: flex;
+    gap: 20px;
+}
+
+.metric {
+    background: #98a4e4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    font-size: 14px; /* Reduced font size */
+}

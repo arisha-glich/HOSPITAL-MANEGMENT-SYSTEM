@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+    <link rel="stylesheet" href="../css/payroll.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Hospital Management</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="nurse.html">Nurse</a></li>
+            <li><a href="pharmacist.html">Pharmacist</a></li>
+            <li><a href="laboratorist.html">Laboratorist</a></li>
+            <li><a href="accountant.html">Accountant</a></li>
+            <li><a href="receptionist.html">Receptionist</a></li>
+            <li><a href="manage_hospital.html">Manage Hospital</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="payroll.html">Create Payroll</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="content">
+        <form>
+            <input type="button" value="Go Back" onclick="goBack()">
+        </form>
+        <script>
+            function goBack() {
+                history.back();
+            }
+        </script>
+        <h2>Payroll Table</h2>
+        <!-- Payroll content goes here -->
+        <div class="payroll-table">
+            <table>
+               
+                <tbody>
+                    <!-- Payroll data will be dynamically generated here -->
+                    <table class="payroll-table">
+                        <thead>
+                            <tr>
+                                <th>Employee ID</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Hours Worked</th>
+                                <th>Hourly Rate</th>
+                                <th>Total Earnings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EMP001</td>
+                                <td>John Doe</td>
+                                <td>Manager</td>
+                                <td>160</td>
+                                <td>$25</td>
+                                <td>$4000</td>
+                            </tr>
+                            <tr>
+                                <td>EMP002</td>
+                                <td>Jane Smith</td>
+                                <td>Accountant</td>
+                                <td>150</td>
+                                <td>$20</td>
+                                <td>$3000</td>
+                            </tr>
+                            <tr>
+                                <td>EMP003</td>
+                                <td>David Johnson</td>
+                                <td>Developer</td>
+                                <td>180</td>
+                                <td>$30</td>
+                                <td>$5400</td>
+                            </tr>
+                            <tr>
+                                <td>EMP004</td>
+                                <td>Emily Brown</td>
+                                <td>Secretary</td>
+                                <td>140</td>
+                                <td>$18</td>
+                                <td>$2520</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <!-- Additional rows for other employees -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/payroll.js"></script>
+</body>
+</html>

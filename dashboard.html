@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+    
+    <div class="sidebar">
+        <h2>Hospital Management</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="nurse.html">Nurse</a></li>
+            <li><a href="pharmacist.html">Pharmacist</a></li>
+            <li><a href="laboratorist.html">Laboratorist</a></li>
+            <li><a href="accountant.html">Accountant</a></li>
+            <li><a href="receptionist.html">Receptionist</a></li>
+            <li><a href="manage_hospital.html">Manage Hospital</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="payroll.html">Create Payroll</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="topbar">
+            <button class="logout">Logout</button>
+        </div>
+        <div class="dashboard"><h2> WELCOME TO HOSPITAL MANEGMENT SYSTEM</h2>
+            <div class="cards">
+                <div class="card" data-link="patient.html">3 <br>Patients</div>
+                <div class="card" data-link="doctor.html">2 <br>Doctors</div>
+                <div class="card" data-link="nurse.html">2 <br>Nurses</div>
+                <div class="card" data-link="pharmacist.html">2 <br>Pharmacist</div>
+                <div class="card" data-link="laboratorist.html">2 <br>Laboratorist</div>
+                <div class="card" data-link="accountant.html">2 <br>Accountant</div>
+                <div class="card" data-link="receptionist.html">2 <br>Receptionist</div>
+                <div class="card" data-link="payments.html"> <br>Payments</div>
+                <div class="card" data-link="operation_report.html">1 <br>Operation Report</div>
+                <div class="card" data-link="birth_report.html">1 <br>Birth Report</div>
+                <div class="card" data-link="death_report.html">1 <br> Death Report</div>
+            </div>
+            <div class="reports">
+                <div class="chart">
+                    <canvas id="patientChart"></canvas>
+                </div>
+                <div class="pie-charts">
+                    <div class="pie-chart">
+                        <canvas id="operationChart"></canvas>
+                    </div>
+                    <div class="pie-chart">
+                        <canvas id="birthChart"></canvas>
+                    </div>
+                    <div class="pie-chart">
+                        <canvas id="deathChart"></canvas>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            <div class="live-date-time">
+                <p id="date-time"></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    function updateTime() {
+        const dateTime = new Date();
+        document.getElementById('date-time').innerText = dateTime.toLocaleString();
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

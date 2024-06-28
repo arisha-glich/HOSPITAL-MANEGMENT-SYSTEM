@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Hospital</title>
+    <link rel="stylesheet" href="../css/manage_hospital.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Manage Hospital</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="nurse.html">Nurse</a></li>
+            <li><a href="pharmacist.html">Pharmacist</a></li>
+            <li><a href="laboratorist.html">Laboratorist</a></li>
+            <li><a href="accountant.html">Accountant</a></li>
+            <li><a href="receptionist.html">Receptionist</a></li>
+            <li><a href="manage_hospital.html">Manage Hospital</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="payroll.html">Create Payroll</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <h3 class="tagline">Innovation in healthcare, compassion in service</h3>
+        <img src="../images/manage.jpg" alt="hospital">
+        <form>
+            <input type="button" value="Go Back" onclick="goBack()">
+        </form>
+        <script>
+            function goBack() {
+                history.back();
+            }
+        </script>
+
+        <h2>Manage Patients</h2>
+        <button id="addPatientBtn">Add Patient</button>
+        <button id="editPatientBtn">Edit Patient</button>
+        <button id="deletePatientBtn">Delete Patient</button>
+        <hr>
+
+        <h2>Manage Doctors</h2>
+        <button id="addDoctorBtn">Add Doctor</button>
+        <button id="editDoctorBtn">Edit Doctor</button>
+        <button id="deleteDoctorBtn">Delete Doctor</button>
+        <hr>
+
+        <h2>Manage Nurses</h2>
+        <button id="addNurseBtn">Add Nurse</button>
+        <button id="editNurseBtn">Edit Nurse</button>
+        <button id="deleteNurseBtn">Delete Nurse</button>
+        <hr>
+
+        <h2>Manage Pharmacists</h2>
+        <button id="addPharmacistBtn">Add Pharmacist</button>
+        <button id="editPharmacistBtn">Edit Pharmacist</button>
+        <button id="deletePharmacistBtn">Delete Pharmacist</button>
+        <hr>
+
+        <h2>Manage Equipment</h2>
+        <button id="allocateEquipmentBtn">Allocate Equipment</button>
+        <button id="addEquipmentBtn">Add Equipment</button>
+        <button id="editEquipmentBtn">Edit Equipment</button>
+        <button id="deleteEquipmentBtn">Delete Equipment</button>
+        <hr>
+
+        <h2>Schedule Appointments</h2>
+        <button id="scheduleAppointmentBtn">Schedule Appointment</button>
+        <button id="editAppointmentBtn">Edit Appointment</button>
+        <button id="cancelAppointmentBtn">Cancel Appointment</button>
+    </div>
+</body>
+<script src="../js/manage_hospital.js"></script>
+</html>

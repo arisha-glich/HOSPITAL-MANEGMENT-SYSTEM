@@ -1,0 +1,93 @@
+/* payroll.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #c1cdde;
+}
+
+
+.content h2 {
+    font-size: 45px;
+    color: #324e6b;
+    text-align: center; /* Center the text horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.sidebar {
+    width: 250px;
+    background: #324e6b;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background: #575d63;
+    display: block;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    flex: 1;
+}
+.content h2{
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.payroll-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+tr:hover {
+    background-color:#324e6b;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="../css/nurse.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Hospital Management</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="nurse.html">Nurse</a></li>
+            <li><a href="pharmacist.html">Pharmacist</a></li>
+            <li><a href="laboratorist.html">Laboratorist</a></li>
+            <li><a href="accountant.html">Accountant</a></li>
+            <li><a href="receptionist.html">Receptionist</a></li>
+            <li><a href="manage_hospital.html">Manage Hospital</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="payroll.html">Create Payroll</a></li>
+            <li><a href="payroll.html">Payroll</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header class="header">
+            <h2></h2>
+            <button class="profile-count-btn"> Nurses Count <br>2 Nurses</button>
+        </header>
+        <form>
+            <input type="button" value="Go Back" onclick="goBack()">
+        </form>
+        <script>
+            function goBack() {
+                history.back();
+            }
+        </script>
+        <!-- Nurse Profiles -->
+        <div class="patient-profile" id="nurse1">
+            <div class="profile-card">
+                <div class="profile-info">
+                    <img src="../images/nurse1.jpg" alt="Nurse Alice">
+                    <div class="info">
+                        <h2>Nurse Alice Johnson</h2>
+                        <p>Nurse ID: N001</p>
+                        <p>Specialization: Pediatric Nursing</p>
+                        <p>Experience: 7 years</p>
+                        <p>Contact:</p>
+                        <ul>
+                            <li>Email: alice.johnson@example.com</li>
+                            <li>Phone: +1234567890</li>
+                        </ul>
+                        <p>Next available: 25 Nov 2020</p>
+                        <button class="delete-btn">Delete</button>
+                        <button class="contact-btn">Contact nurse</button>
+                    </div>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <p>Surgeries Assisted</p>
+                        <div class="metric-value" data-value="120">120</div>
+                    </div>
+                    <div class="metric">
+                        <p>Patients Managed</p>
+                        <div class="metric-value" data-value="500">500</div>
+                    </div>
+                    <div class="metric">
+                        <p>Success Rate</p>
+                        <div class="metric-value" data-value="98%">98%</div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <p>Training Progress</p>
+                    <div class="progress-circle" data-value="90%">90%</div>
+                    <p>Certifications</p>
+                    <p>Ongoing</p>
+                </div>
+                <div class="latest-reports">
+                    <h3>Latest training</h3>
+                    <div class="report">
+                        <p>Pediatric Care 2020</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <a href="#" class="more-reports">More training ></a>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="patient-profile" id="nurse2">
+            <div class="profile-card">
+                <div class="profile-info">
+                    <img src="../images/nurse2.jpeg" alt="Nurse Bob">
+                    <div class="info">
+                        <h2>Nurse Bob Martin</h2>
+                        <p>Nurse ID: N002</p>
+                        <p>Specialization: Emergency Nursing</p>
+                        <p>Experience: 5 years</p>
+                        <p>Contact:</p>
+                        <ul>
+                            <li>Email: bob.martin@example.com</li>
+                            <li>Phone: +0987654321</li>
+                        </ul>
+                        <p>Next available: 30 Nov 2020</p>
+                        <button class="delete-btn">Delete</button>
+                        <button class="contact-btn">Contact nurse</button>
+                    </div>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <p>Surgeries Assisted</p>
+                        <div class="metric-value" data-value="150">150</div>
+                    </div>
+                    <div class="metric">
+                        <p>Patients Managed</p>
+                        <div class="metric-value" data-value="600">600</div>
+                    </div>
+                    <div class="metric">
+                        <p>Success Rate</p>
+                        <div class="metric-value" data-value="95%">95%</div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <p>Training Progress</p>
+                    <div class="progress-circle" data-value="85%">85%</div>
+                    <p>Certifications</p>
+                    <p>Ongoing</p>
+                </div>
+                <div class="latest-reports">
+                    <h3>Latest training</h3>
+                    <div class="report">
+                        <p>Emergency Response 2020</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                   
+            </div>
+        </div>
+    </div>
+    <script src="../js/nurse.js"></script>
+</body>
+</html>
